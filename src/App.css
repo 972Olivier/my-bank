@@ -1,6 +1,7 @@
 /*----------general rules--------*/
 .App {
   background-color: #eceff1;
+  width: 100vw;
   height: 100vh;
 }
 h1,
@@ -36,7 +37,7 @@ nav {
   height: 50px;
   justify-content: space-between;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 30px;
   background-color: #232323;
 }
 .nav1 {
@@ -115,7 +116,12 @@ svg {
 section {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #eceff1;
+  flex-direction: column;
+}
+section div {
+  display: flex;
 }
 .name {
   display: flex;
@@ -124,4 +130,57 @@ section {
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 30px;
+}
+.name span {
+  font-size: 20px;
+  font-family: "Finlandica", sans-serif;
+}
+.box0,
+.box1,
+.box2,
+.box3 {
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 59%;
+  box-sizing: border-box;
+}
+.box0,
+.box2 {
+  background-color: white;
+}
+.box1,
+.box3 {
+  background-color: #f8f7f7;
+}
+.date {
+  color: #465a66;
+}
+.twoSpan {
+  /* border: 1px solid black; */
+  width: 78%;
+  justify-content: space-between;
+}
+.twoSpan span {
+  color: #283238;
+}
+
+.amount {
+  font-family: "Finlandica", sans-serif;
+}
+.button {
+  /* border: solid 1px black; */
+  width: 59%;
+  justify-content: flex-end;
+}
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  align-items: flex-end;
+  border: none;
+  background-color: #f8f7f7;
+  color: #5a727e;
 }
